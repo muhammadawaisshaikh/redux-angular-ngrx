@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row products">
-    <div class="col-6 list">
+  <div class="row products justify-content-between">
+    <div class="col-5 list">
       <h3>All Products</h3>
 
       <div class="card mb-2" *ngFor="let product of productItems$ | async">
@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 form">
+    <div class="col-5 form">
       <form [formGroup]="productForm" (ngSubmit)="addProduct(productForm)">
         <h3>Add Product</h3>
   
