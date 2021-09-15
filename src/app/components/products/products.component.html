@@ -1,1 +1,7 @@
-<p>products works!</p>
+<h4>Testing NgRx - Products</h4>
+
+<ul>
+  <li *ngFor="let product of productItems$ | async">
+    {{product.name}}
+  </li>
+</ul>
