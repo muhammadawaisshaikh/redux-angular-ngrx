@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Ngrx 
 import { StoreModule } from '@ngrx/store';
@@ -16,6 +17,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     StoreModule.forRoot(reducers)
     // StoreModule.forRoot({ 
     //   message: simpleReducer

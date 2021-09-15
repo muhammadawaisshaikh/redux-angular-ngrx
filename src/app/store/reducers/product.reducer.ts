@@ -11,7 +11,7 @@ export interface ProductsListState {
 const initialState: ProductsListState = {
     products: [
         {
-            id: '1',
+            id: 1,
             name: 'Eloquent Javascript Book',
             price: 200
         }
